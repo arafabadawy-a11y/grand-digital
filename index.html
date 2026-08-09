@@ -4,52 +4,164 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>جراند ديجيتال | GRAND DIGITAL</title>
-<meta name="description" content="جراند ديجيتال - حلول متكاملة للطباعة والتغليف وتجهيز الملفات والتصميم وتنفيذ المنتجات النهائية.">
+
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:Tahoma,Arial,sans-serif;background:#f5f8fb;color:#10213b;line-height:1.8}
-a{text-decoration:none;color:inherit}
-header{position:sticky;top:0;z-index:100;background:linear-gradient(135deg,#062b52,#087f95);color:#fff;box-shadow:0 3px 15px #0002}
-.nav{max-width:1100px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:15px}
-.logo{font-size:27px;font-weight:900}.logo span{color:#00d5df}
-nav{display:flex;gap:18px;flex-wrap:wrap}
-nav a{font-weight:bold;padding:8px 10px;border-radius:8px}
-nav a:hover{background:#ffffff22}
-.hero{background:linear-gradient(135deg,#063457,#087c91 65%,#08b8c4);color:#fff;text-align:center;padding:75px 20px 85px}
-.badge{display:inline-block;background:#ffffff18;border:1px solid #ffffff44;border-radius:30px;padding:7px 18px;margin-bottom:18px}
-.hero h1{font-size:clamp(38px,7vw,64px);margin-bottom:8px}
-.hero h1 span{color:#ffbd16}
-.hero h2{font-size:clamp(20px,4vw,32px);color:#00dce6;margin-bottom:18px}
-.hero p{max-width:780px;margin:0 auto 28px;font-size:18px}
-.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;padding:13px 25px;border-radius:14px;font-weight:900;transition:.2s}
-.btn:hover{transform:translateY(-2px)}
-.whatsapp{background:#08d66a;color:white}.gold{background:#ffb900;color:#10213b}.dark{background:#07345b;color:white}
-section{max-width:1100px;margin:auto;padding:65px 20px}
-.title{text-align:center;margin-bottom:35px}
-.title h2{font-size:36px}.line{width:85px;height:5px;border-radius:10px;background:#08b9c5;margin:10px auto}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.card{background:white;border-radius:18px;padding:25px;box-shadow:0 8px 25px #10213b12;border:1px solid #e5edf3;text-align:center}
-.icon{font-size:42px;margin-bottom:10px}.card h3{margin-bottom:8px;color:#07345b}
-.about{background:#fff;border-radius:22px;padding:30px;box-shadow:0 8px 25px #10213b12}
-.portfolio .card{min-height:150px;background:linear-gradient(145deg,#07345b,#0b91a0);color:white;display:flex;flex-direction:column;justify-content:center}
-.portfolio .card h3{color:#fff}
-.contact{background:linear-gradient(135deg,#062b52,#087f95);color:#fff;border-radius:25px;text-align:center;padding:45px 20px}
-.contact h2{font-size:34px;margin-bottom:10px}
-.contact .phone{font-size:24px;font-weight:bold;margin:15px}
-footer{text-align:center;background:#061f3b;color:#fff;padding:25px 15px}
-.small{opacity:.8;font-size:14px}
-@media(max-width:700px){
- .nav{flex-direction:column}.hero{padding-top:55px}
- nav{justify-content:center;gap:5px}
- section{padding:50px 15px}
+body{
+font-family:Tahoma,Arial,sans-serif;
+background:#f4f8fa;
+color:#222;
+line-height:1.8
 }
-</style>
-</head>
-<body>
+a{text-decoration:none;color:inherit}
 
-<header>
-  <div class="nav">
-    <div class="logo">جراند ديجيتال | <span>GRAND DIGITAL</span></div>
-    <
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:linear-gradient(135deg,#063f63,#087d91,#08a8b8);
+color:#fff;
+box-shadow:0 3px 15px #0003
+}
+
+.nav{
+max-width:1100px;
+margin:auto;
+padding:18px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:15px;
+flex-wrap:wrap
+}
+
+.logo{font-size:27px;font-weight:900}
+.logo span{color:#00e5ff}
+
+nav{display:flex;gap:5px;flex-wrap:wrap}
+nav a{font-weight:bold;padding:8px 12px;border-radius:10px}
+nav a:hover{background:#ffffff25}
+
+.hero{
+min-height:620px;
+padding:70px 20px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+background:
+radial-gradient(circle at 20% 20%,#00d9ff33,transparent 30%),
+linear-gradient(135deg,#063b5b,#08788d,#08a8b8)
+}
+
+.hero-content{max-width:850px}
+
+.badge{
+display:inline-block;
+border:1px solid #ffffff55;
+background:#ffffff12;
+border-radius:30px;
+padding:8px 22px;
+margin-bottom:25px
+}
+
+.hero h1{font-size:52px;margin-bottom:10px}
+.gold{color:#ffbd00}
+.hero h2{color:#00e5ff;font-size:29px;margin-bottom:20px}
+.hero p{font-size:20px;max-width:750px;margin:0 auto 28px}
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap
+}
+
+.btn{
+display:inline-block;
+padding:14px 27px;
+border-radius:14px;
+font-size:18px;
+font-weight:bold;
+transition:.3s
+}
+.btn:hover{transform:translateY(-3px)}
+.whatsapp{background:#08d466;color:#fff}
+.gold-btn{background:#ffbd00;color:#222}
+
+section{max-width:1100px;margin:auto;padding:70px 20px}
+
+.title{text-align:center;margin-bottom:40px}
+.title h2{color:#075579;font-size:35px}
+.line{width:80px;height:4px;background:#ffbd00;margin:10px auto;border-radius:10px}
+.title p{color:#666}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px
+}
+
+.card{
+background:#fff;
+padding:28px 20px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 20px #073b5015;
+border:1px solid #e6eef1;
+transition:.3s
+}
+.card:hover{transform:translateY(-6px)}
+.icon{font-size:43px;margin-bottom:8px}
+.card h3{color:#075579;font-size:22px;margin-bottom:8px}
+.card p{color:#666}
+
+.about{
+background:#fff;
+max-width:none
+}
+.about-inner{
+max-width:950px;
+margin:auto;
+padding:70px 20px;
+text-align:center
+}
+.about-inner p{font-size:19px;color:#555}
+
+.portfolio{
+max-width:none;
+background:linear-gradient(135deg,#063f63,#087d91);
+color:#fff
+}
+.portfolio-inner{max-width:1100px;margin:auto;padding:70px 20px}
+.portfolio .title h2{color:#fff}
+.portfolio .title p{color:#d8f8fc}
+
+.portfolio-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px
+}
+
+.portfolio-card{
+min-height:150px;
+border-radius:20px;
+padding:25px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:#ffffff18;
+border:1px solid #ffffff30
+}
+
+.contact{max-width:none;background:#f4f8fa}
+.contact-inner{max-width:850px;margin:auto;text-align:center}
+
+.contact-box{
+background:linear-gradient(135deg,#063f63,#08a8b8);
+color:#fff;
+border-radius:25px;
+padding:

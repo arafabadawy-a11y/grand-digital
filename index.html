@@ -3,165 +3,466 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>جراند ديجيتال | GRAND DIGITAL</title>
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-font-family:Tahoma,Arial,sans-serif;
-background:#f4f8fa;
-color:#222;
-line-height:1.8
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
-a{text-decoration:none;color:inherit}
 
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Tahoma,Arial,sans-serif;
+    background:#f4f8fa;
+    color:#222;
+    line-height:1.8;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* HEADER */
 header{
-position:sticky;
-top:0;
-z-index:1000;
-background:linear-gradient(135deg,#063f63,#087d91,#08a8b8);
-color:#fff;
-box-shadow:0 3px 15px #0003
+    background:linear-gradient(135deg,#063f63,#08a8b8);
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 15px #0003;
 }
 
 .nav{
-max-width:1100px;
-margin:auto;
-padding:18px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:15px;
-flex-wrap:wrap
+    max-width:1100px;
+    margin:auto;
+    padding:15px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
 }
 
-.logo{font-size:27px;font-weight:900}
-.logo span{color:#00e5ff}
+.logo{
+    font-size:25px;
+    font-weight:bold;
+}
 
-nav{display:flex;gap:5px;flex-wrap:wrap}
-nav a{font-weight:bold;padding:8px 12px;border-radius:10px}
-nav a:hover{background:#ffffff25}
+.logo span{
+    color:#00e5ff;
+}
 
+nav{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    padding:8px 12px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:#ffffff25;
+}
+
+/* HERO */
 .hero{
-min-height:620px;
-padding:70px 20px;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
-background:
-radial-gradient(circle at 20% 20%,#00d9ff33,transparent 30%),
-linear-gradient(135deg,#063b5b,#08788d,#08a8b8)
+    background:linear-gradient(135deg,#063f63,#08a8b8);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
 }
 
-.hero-content{max-width:850px}
-
-.badge{
-display:inline-block;
-border:1px solid #ffffff55;
-background:#ffffff12;
-border-radius:30px;
-padding:8px 22px;
-margin-bottom:25px
+.hero h1{
+    font-size:42px;
+    margin-bottom:15px;
 }
 
-.hero h1{font-size:52px;margin-bottom:10px}
-.gold{color:#ffbd00}
-.hero h2{color:#00e5ff;font-size:29px;margin-bottom:20px}
-.hero p{font-size:20px;max-width:750px;margin:0 auto 28px}
+.hero h1 span{
+    color:#00e5ff;
+}
 
-.buttons{
-display:flex;
-justify-content:center;
-gap:15px;
-flex-wrap:wrap
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
 }
 
 .btn{
-display:inline-block;
-padding:14px 27px;
-border-radius:14px;
-font-size:18px;
-font-weight:bold;
-transition:.3s
+    display:inline-block;
+    background:white;
+    color:#063f63;
+    padding:13px 25px;
+    border-radius:30px;
+    font-weight:bold;
+    margin:5px;
+    box-shadow:0 4px 12px #0003;
 }
-.btn:hover{transform:translateY(-3px)}
-.whatsapp{background:#08d466;color:#fff}
-.gold-btn{background:#ffbd00;color:#222}
 
-section{max-width:1100px;margin:auto;padding:70px 20px}
+.btn:hover{
+    transform:translateY(-2px);
+}
 
-.title{text-align:center;margin-bottom:40px}
-.title h2{color:#075579;font-size:35px}
-.line{width:80px;height:4px;background:#ffbd00;margin:10px auto;border-radius:10px}
-.title p{color:#666}
+/* SECTIONS */
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:65px 20px;
+}
 
+.title{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.title h2{
+    font-size:32px;
+    color:#063f63;
+}
+
+.title p{
+    color:#666;
+}
+
+/* SERVICES */
 .grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
 }
 
 .card{
-background:#fff;
-padding:28px 20px;
-border-radius:20px;
-text-align:center;
-box-shadow:0 5px 20px #073b5015;
-border:1px solid #e6eef1;
-transition:.3s
+    background:white;
+    padding:30px 20px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 4px 18px #00000012;
+    transition:.3s;
 }
-.card:hover{transform:translateY(-6px)}
-.icon{font-size:43px;margin-bottom:8px}
-.card h3{color:#075579;font-size:22px;margin-bottom:8px}
-.card p{color:#666}
 
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.icon{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.card h3{
+    color:#063f63;
+    margin-bottom:10px;
+}
+
+/* ABOUT */
 .about{
-background:#fff;
-max-width:none
-}
-.about-inner{
-max-width:950px;
-margin:auto;
-padding:70px 20px;
-text-align:center
-}
-.about-inner p{font-size:19px;color:#555}
-
-.portfolio{
-max-width:none;
-background:linear-gradient(135deg,#063f63,#087d91);
-color:#fff
-}
-.portfolio-inner{max-width:1100px;margin:auto;padding:70px 20px}
-.portfolio .title h2{color:#fff}
-.portfolio .title p{color:#d8f8fc}
-
-.portfolio-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px
+    background:white;
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 4px 18px #00000012;
+    text-align:center;
 }
 
-.portfolio-card{
-min-height:150px;
-border-radius:20px;
-padding:25px;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-background:#ffffff18;
-border:1px solid #ffffff30
+.about h2{
+    color:#063f63;
+    margin-bottom:15px;
 }
 
-.contact{max-width:none;background:#f4f8fa}
-.contact-inner{max-width:850px;margin:auto;text-align:center}
+/* CONTACT */
+.contact{
+    background:linear-gradient(135deg,#063f63,#08a8b8);
+    color:white;
+    border-radius:25px;
+    text-align:center;
+    padding:45px 20px;
+}
 
-.contact-box{
-background:linear-gradient(135deg,#063f63,#08a8b8);
-color:#fff;
-border-radius:25px;
-padding:
+.contact h2{
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+.phone{
+    font-size:24px;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+/* FOOTER */
+footer{
+    background:#061f3b;
+    color:white;
+    text-align:center;
+    padding:30px 15px;
+}
+
+.small{
+    opacity:.8;
+    font-size:14px;
+    margin-top:5px;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+
+    .nav{
+        flex-direction:column;
+    }
+
+    nav{
+        justify-content:center;
+    }
+
+    .hero{
+        padding:60px 15px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:45px 15px;
+    }
+
+    .about{
+        padding:25px 18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="nav">
+
+<div class="logo">
+جراند ديجيتال |
+<span>GRAND DIGITAL</span>
+</div>
+
+<nav>
+<a href="#home">الرئيسية</a>
+<a href="#services">خدماتنا</a>
+<a href="#about">من نحن</a>
+<a href="#contact">تواصل معنا</a>
+</nav>
+
+</div>
+
+</header>
+
+
+<main>
+
+<!-- HOME -->
+
+<div class="hero" id="home">
+
+<h1>
+جراند ديجيتال |
+<span>GRAND DIGITAL</span>
+</h1>
+
+<p>
+حلول الطباعة والتغليف والتصميم الرقمي
+</p>
+
+<a class="btn" href="#services">
+اكتشف خدماتنا
+</a>
+
+<a class="btn" href="#contact">
+تواصل معنا
+</a>
+
+</div>
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<div class="title">
+
+<h2>خدماتنا</h2>
+
+<p>
+نقدم حلولاً متكاملة للطباعة والتصميم والتغليف
+</p>
+
+</div>
+
+
+<div class="grid">
+
+<div class="card">
+
+<div class="icon">🖨️</div>
+
+<h3>الطباعة</h3>
+
+<p>
+طباعة احترافية بجودة عالية لجميع أنواع المطبوعات.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📦</div>
+
+<h3>التغليف</h3>
+
+<p>
+تصميم وطباعة عبوات وتغليف مميز للمنتجات.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🎨</div>
+
+<h3>التصميم</h3>
+
+<p>
+تصميم الهوية البصرية والإعلانات والمواد التسويقية.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📚</div>
+
+<h3>المطبوعات التعليمية</h3>
+
+<p>
+تصميم وتجهيز الكتب والملازم والمواد التعليمية.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">💻</div>
+
+<h3>التصميم الرقمي</h3>
+
+<p>
+حلول رقمية وتصميم صفحات ومواقع إلكترونية.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">✨</div>
+
+<h3>الهوية التجارية</h3>
+
+<p>
+بناء هوية احترافية متكاملة للعلامات التجارية.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="title">
+
+<h2>من نحن</h2>
+
+</div>
+
+<div class="about">
+
+<h2>جراند ديجيتال | GRAND DIGITAL</h2>
+
+<p>
+نقدم حلولاً متكاملة في مجال الطباعة والتغليف والتصميم
+والخدمات الرقمية، مع الاهتمام بالجودة والدقة والمظهر
+الاحترافي للعلامات التجارية.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="contact">
+
+<h2>تواصل معنا</h2>
+
+<p>
+يسعدنا استقبال استفساراتكم وطلباتكم
+</p>
+
+<div class="phone">
+📱 تواصل معنا عبر واتساب
+</div>
+
+<a class="btn" href="https://wa.me/201000000000">
+واتساب
+</a>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<strong>
+GRAND DIGITAL | جراند ديجيتال
+</strong>
+
+<div class="small">
+Printing & Packaging Solutions
+</div>
+
+<div class="small">
+© 2026 جميع الحقوق محفوظة
+</div>
+
+</footer>
+
+</body>
+</html>

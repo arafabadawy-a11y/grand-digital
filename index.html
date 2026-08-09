@@ -3,366 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>جراند ديجيتال | GRAND DIGITAL</title>
-
-<meta name="description" content="جراند ديجيتال - حلول الطباعة والتغليف وطباعة الكتب والملازم والتجليد والطباعة الرقمية">
-
+<meta name="description" content="جراند ديجيتال - حلول متكاملة للطباعة والتغليف وتجهيز الملفات والتصميم وتنفيذ المنتجات النهائية.">
 <style>
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
-
-body{
-  font-family:Arial,Tahoma,sans-serif;
-  background:#f5f8fb;
-  color:#10213b;
-  line-height:1.8;
-}
-
-header{
-  background:linear-gradient(135deg,#062c50,#087f96);
-  color:white;
-  padding:22px 7%;
-  text-align:center;
-}
-
-.logo{
-  font-size:30px;
-  font-weight:900;
-}
-
-.logo .grand{
-  color:#00d9e8;
-}
-
-.logo .digital{
-  color:#fff;
-}
-
-nav{
-  margin-top:10px;
-}
-
-nav a{
-  color:white;
-  text-decoration:none;
-  margin:0 8px;
-  font-weight:bold;
-}
-
-.hero{
-  background:linear-gradient(135deg,#062c50,#07506c,#09a8b8);
-  color:white;
-  text-align:center;
-  padding:80px 7%;
-}
-
-.hero h1{
-  font-size:44px;
-  margin-bottom:15px;
-}
-
-.hero h1 span{
-  color:#ffb800;
-}
-
-.hero h2{
-  font-size:25px;
-  color:#00e0ed;
-  margin-bottom:20px;
-}
-
-.hero p{
-  font-size:19px;
-  max-width:800px;
-  margin:auto;
-}
-
-.buttons{
-  margin-top:30px;
-}
-
-.btn{
-  display:inline-block;
-  padding:14px 28px;
-  margin:8px;
-  border-radius:12px;
-  text-decoration:none;
-  font-weight:bold;
-  font-size:18px;
-}
-
-.whatsapp{
-  background:#19c763;
-  color:white;
-}
-
-.services{
-  padding:60px 7%;
-  text-align:center;
-}
-
-.title{
-  font-size:35px;
-  margin-bottom:35px;
-  color:#062c50;
-}
-
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
-  max-width:1100px;
-  margin:auto;
-}
-
-.card{
-  background:white;
-  padding:30px 20px;
-  border-radius:18px;
-  box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-.card .icon{
-  font-size:45px;
-  margin-bottom:10px;
-}
-
-.card h3{
-  color:#087f96;
-  margin-bottom:8px;
-}
-
-.about{
-  background:#eaf7fa;
-  padding:60px 7%;
-  text-align:center;
-}
-
-.about p{
-  max-width:850px;
-  margin:auto;
-  font-size:18px;
-}
-
-.contact{
-  padding:60px 7%;
-  text-align:center;
-}
-
-.contact-box{
-  max-width:650px;
-  margin:auto;
-  background:#062c50;
-  color:white;
-  padding:35px;
-  border-radius:20px;
-}
-
-.contact-box h2{
-  color:#ffb800;
-  margin-bottom:15px;
-}
-
-footer{
-  background:#041d35;
-  color:white;
-  text-align:center;
-  padding:25px;
-}
-
-.small{
-  font-size:14px;
-  opacity:.8;
-}
-
-@media(max-width:600px){
-  .hero h1{
-    font-size:32px;
-  }
-
-  .hero h2{
-    font-size:21px;
-  }
-
-  .logo{
-    font-size:25px;
-  }
-
-  .btn{
-    display:block;
-    margin:10px auto;
-    max-width:300px;
-  }
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Tahoma,Arial,sans-serif;background:#f5f8fb;color:#10213b;line-height:1.8}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:100;background:linear-gradient(135deg,#062b52,#087f95);color:#fff;box-shadow:0 3px 15px #0002}
+.nav{max-width:1100px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.logo{font-size:27px;font-weight:900}.logo span{color:#00d5df}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{font-weight:bold;padding:8px 10px;border-radius:8px}
+nav a:hover{background:#ffffff22}
+.hero{background:linear-gradient(135deg,#063457,#087c91 65%,#08b8c4);color:#fff;text-align:center;padding:75px 20px 85px}
+.badge{display:inline-block;background:#ffffff18;border:1px solid #ffffff44;border-radius:30px;padding:7px 18px;margin-bottom:18px}
+.hero h1{font-size:clamp(38px,7vw,64px);margin-bottom:8px}
+.hero h1 span{color:#ffbd16}
+.hero h2{font-size:clamp(20px,4vw,32px);color:#00dce6;margin-bottom:18px}
+.hero p{max-width:780px;margin:0 auto 28px;font-size:18px}
+.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 25px;border-radius:14px;font-weight:900;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.whatsapp{background:#08d66a;color:white}.gold{background:#ffb900;color:#10213b}.dark{background:#07345b;color:white}
+section{max-width:1100px;margin:auto;padding:65px 20px}
+.title{text-align:center;margin-bottom:35px}
+.title h2{font-size:36px}.line{width:85px;height:5px;border-radius:10px;background:#08b9c5;margin:10px auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:white;border-radius:18px;padding:25px;box-shadow:0 8px 25px #10213b12;border:1px solid #e5edf3;text-align:center}
+.icon{font-size:42px;margin-bottom:10px}.card h3{margin-bottom:8px;color:#07345b}
+.about{background:#fff;border-radius:22px;padding:30px;box-shadow:0 8px 25px #10213b12}
+.portfolio .card{min-height:150px;background:linear-gradient(145deg,#07345b,#0b91a0);color:white;display:flex;flex-direction:column;justify-content:center}
+.portfolio .card h3{color:#fff}
+.contact{background:linear-gradient(135deg,#062b52,#087f95);color:#fff;border-radius:25px;text-align:center;padding:45px 20px}
+.contact h2{font-size:34px;margin-bottom:10px}
+.contact .phone{font-size:24px;font-weight:bold;margin:15px}
+footer{text-align:center;background:#061f3b;color:#fff;padding:25px 15px}
+.small{opacity:.8;font-size:14px}
+@media(max-width:700px){
+ .nav{flex-direction:column}.hero{padding-top:55px}
+ nav{justify-content:center;gap:5px}
+ section{padding:50px 15px}
 }
 </style>
 </head>
-
 <body>
 
 <header>
-
-  <div class="logo">
-    <span class="grand">GRAND</span>
-    <span class="digital"> | ديجيتال</span>
-  </div>
-
-  <nav>
-    <a href="#services">خدماتنا</a>
-    <a href="#about">عن النشاط</a>
-    <a href="#contact">تواصل معنا</a>
-  </nav>
-
-</header>
-
-
-<section class="hero">
-
-  <h1>
-    جراند <span>ديجيتال</span>
-  </h1>
-
-  <h2>
-    حلول الطباعة والتغليف
-    <br>
-    Printing & Packaging Solutions
-  </h2>
-
-  <p>
-    حلول متكاملة للطباعة والتغليف بجودة احترافية،
-    من تجهيز الملفات والتصميم وحتى تنفيذ المنتجات النهائية.
-  </p>
-
-  <div class="buttons">
-
-    <a class="btn whatsapp"
-       href="https://wa.me/201060203956?text=السلام%20عليكم،%20أريد%20الاستفسار%20عن%20خدمات%20جراند%20ديجيتال%20للطباعة%20والتغليف."
-       target="_blank">
-       💬 تواصل معنا عبر واتساب
-    </a>
-
-  </div>
-
-</section>
-
-
-<section class="services" id="services">
-
-  <h2 class="title">خدماتنا</h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <div class="icon">📚</div>
-      <h3>طباعة الكتب</h3>
-      <p>
-        طباعة الكتب التعليمية والمذكرات والمناهج بجودة عالية.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="icon">🖨️</div>
-      <h3>الطباعة الرقمية</h3>
-      <p>
-        طباعة رقمية احترافية بمقاسات وخامات متعددة.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="icon">📖</div>
-      <h3>التجليد</h3>
-      <p>
-        خدمات التجليد والتشطيب للكتب والملازم والملفات.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="icon">📦</div>
-      <h3>التغليف</h3>
-      <p>
-        حلول تغليف مناسبة للمنتجات والكتب والمطبوعات.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="icon">🎨</div>
-      <h3>التصميم والتجهيز</h3>
-      <p>
-        تجهيز الملفات وتصميم المطبوعات قبل عملية الطباعة.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="icon">📝</div>
-      <h3>الملازم التعليمية</h3>
-      <p>
-        طباعة وتجهيز الملازم والمواد التعليمية بمستويات مختلفة.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-
-<section class="about" id="about">
-
-  <h2 class="title">عن جراند ديجيتال</h2>
-
-  <p>
-    جراند ديجيتال نشاط متخصص في حلول الطباعة والتغليف،
-    ونقدم خدمات متكاملة للأفراد والمدارس والمكاتب والأنشطة التجارية،
-    مع الاهتمام بجودة الطباعة والتشطيب وسرعة التنفيذ.
-  </p>
-
-</section>
-
-
-<section class="contact" id="contact">
-
-  <h2 class="title">تواصل معنا</h2>
-
-  <div class="contact-box">
-
-    <h2>جراند ديجيتال | GRAND DIGITAL</h2>
-
-    <p>
-      حلول الطباعة والتغليف
-    </p>
-
-    <p>
-      📱 واتساب: 01060203956
-    </p>
-
-    <br>
-
-    <a class="btn whatsapp"
-       href="https://wa.me/201060203956?text=السلام%20عليكم،%20أريد%20الاستفسار%20عن%20خدمات%20جراند%20ديجيتال%20للطباعة%20والتغليف."
-       target="_blank">
-       💬 ابدأ المحادثة على واتساب
-    </a>
-
-  </div>
-
-</section>
-
-
-<footer>
-
-  <strong>GRAND DIGITAL | جراند ديجيتال</strong>
-
-  <div class="small">
-    Printing & Packaging Solutions
-  </div>
-
-  <div class="small">
-    © جميع الحقوق محفوظة
-  </div>
-
-</footer>
-
-</body>
-</html>
+  <div class="nav">
+    <div class="logo">جراند ديجيتال | <span>GRAND DIGITAL</span></div>
+    <
